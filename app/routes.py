@@ -2,29 +2,17 @@ from flask import render_template, Blueprint, request, url_for, redirect
 
 main = Blueprint("main", __name__)
 
-# from flask_sitemap import Sitemap
-# from run import app
-
-# ext = Sitemap(app=app)
-
 @main.route("/")
 @main.route("/home/")
 @main.route("/home")
 def home():
-    page = "base"
+    page = "info"
     if page == "info":
         return render_template("home-info.html", title="LABY | HOME")
     elif page == "rentree":
         return render_template("home-rentree.html", title="LABY | HOME")
     else:
         return render_template("home.html", title="LABY | HOME")
-
-
-# @ext.register_generator
-# def home():
-#     # Not needed if you set SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS=True
-#     yield "home", {}
-
 
 @main.route("/presse/")
 @main.route("/presse")
