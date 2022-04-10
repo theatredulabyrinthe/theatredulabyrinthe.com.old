@@ -1,0 +1,46 @@
+{% extends 'home.html' %}
+
+{% block modal %}
+<!-- Button trigger modal -->
+<button style="display:none" type="button" id="bts-modal-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+</button>
+
+<!-- Modal -->
+<div class="modal fade show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #C43100; color: rgb(233, 233, 233);">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                    Infos rentrée 2021
+                </h5>
+            </div>
+            <div class="modal-body" style="color:rgb(233, 233, 233);">
+                <div style="text-align:justify">
+                    Il reste encore quelques places dans les cours !
+                    <br>
+                    N'hésitez pas à nous contacter par téléphone au 06.20.66.49.76
+                    ou par e-mail (
+                    <a href="mailto:gwen.anglade@gmail.com">
+                        <span style="font-weight: bold;">
+                            gwen.anglade@gmail.com
+                        </span>
+                    </a>
+                    ).
+                    <br>
+                    <small style="font-style:italic">
+                        Merci de ne pas vous présenter au cours sans avoir eu au préalable un contact
+                        téléphonique ou électonique avec le professeur.
+                        À bientôt et surtout n'oubliez pas vos
+                        <b>Pass Sanitaires</b>
+                        ou <b>Tests PCR</b>
+                        de <b>moins de 72h obligatoires</b> pour les ateliers !
+                    </small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Compris !</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

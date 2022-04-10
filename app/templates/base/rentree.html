@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css"> <!-- {{url_for('static', filename='css/style.css')}} -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>THÉÂTRE DU LABYRINTHE</title>
+</head>
+
+<body>
+    <h1 class="top-title">THÉÂTRE DU LABYRINTHE</h1>
+
+    <div class="main-container">
+        <div class="navbar-container" id="myTopnav">
+            <a class="menu-icon" onclick="displayMenu()"> MENU <i class="fa fa-bars"></i></a>
+            <div>
+                <a class="navbar-tab-mobile" href="home.html">ACCUEIL</a>
+                <a class="navbar-tab-mobile" href="home.html">CRÉATIONS ADULTES</a>
+                <a class="navbar-tab-mobile" href="home.html">CRÉATIONS ENFANTS</a>
+                <a class="navbar-tab-mobile" href="home.html">L'ASSOCIATION</a>
+                <a class="navbar-tab-mobile" href="home.html">GALERIE</a>
+                <a class="navbar-tab-mobile" href="home.html">REVUE DE PRESSE</a>
+                <a class="navbar-tab-mobile" href="home.html">LES ATELIERS</a>
+                <a class="navbar-tab-mobile" href="home.html">REVUE DE PRESSE</a>
+                <a class="navbar-tab-mobile" href="home.html">INFOS RENTRÉE</a>
+                <a class="navbar-tab-mobile" href="home.html">CONTACT</a>
+            </div>
+
+            <div class="navbar-sep"> </div>
+            <div>
+                <a class="navbar-tab" href="home.html">ACCUEIL</a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div class="navbar-dropdown">
+                <a class="navbar-tab navbar-main-dropdown" href="#creations">
+                    CRÉATIONS
+                    <div class="dropdown-content">
+                        <a href="#">CRÉATIONS ADULTES</a>
+                        <hr>
+                        <a href="#">CRÉATIONS ENFANTS</a>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div class="navbar-dropdown">
+                <a class="navbar-tab navbar-main-dropdown" href="#à-propos">
+                    À PROPOS
+                    <div class="dropdown-content">
+                        <a href="#">L'ASSOCIATION</a>
+                        <hr>
+                        <a href="#">GALERIE</a>
+                        <hr>
+                        <a href="#">REVUE DE PRESSE</a>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div class="navbar-dropdown">
+                <a class="navbar-tab navbar-main-dropdown" href="#ateliers">
+                    LES ATELIERS
+                    <div class="dropdown-content">
+                        <a href="#">LES ATELIERS</a>
+                        <hr>
+                        <a href="#">INFOS RENTRÉE</a>
+                        <hr>
+                        <a href="#">TARIFS</a>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div>
+                <a class="navbar-tab" href="#contact">CONTACT</a>
+            </div>
+            <div class="navbar-sep"> </div>
+        </div>
+
+        <div class="sub-container container-affiche">
+            <div class="top-art">
+                <div class="banniere">
+                    LES ATELIERS
+                </div>
+                <div class="logo">
+                    <img class="img-logo" src="../resources/img/red.png" alt="">
+                </div>
+            </div>
+            <div class="content" style="padding-top: 4%;" id="rentree_container">
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="../static/js/index.js"> </script>
+    <script src="../static/js/rentree.js"> </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

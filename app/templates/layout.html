@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="theatre, labyrinthe, chartres, cours" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css?version=1.3"> <!-- {{url_for('static', filename='css/style.css')}} -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../static/resources/fav.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../static/resources/fav.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../static/resources/fav.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/resources/fav.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/resources/fav.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../static/resources/fav.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../static/resources/fav.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../static/resources/fav.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/resources/fav.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../static/resources/fav.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/resources/fav.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/resources/fav.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/resources/fav.ico/favicon-16x16.png">
+    <link rel="manifest" href="../static/resources/fav.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>THÉÂTRE DU LABYRINTHE</title>
+</head>
+
+<body>
+    <h1 class="top-title">THÉÂTRE DU LABYRINTHE</h1>
+
+    <div class="main-container">
+        <div class="navbar-container" id="myTopnav">
+            <a class="menu-icon" onclick="displayMenu()"> MENU <i class="fa fa-bars"></i></a>
+            <div>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.home' )}}">ACCUEIL</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.creations_adultes' )}}">CRÉATIONS ADULTES</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.creations_enfants' )}}">CRÉATIONS ENFANTS</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.association' )}}">L'ASSOCIATION</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.galerie' )}}">GALERIE</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.presse' )}}">REVUE DE PRESSE</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.ateliers' )}}">LES ATELIERS</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.rentree' )}}">INFOS RENTRÉE</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.tarifs' )}}">TARIFS</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.coaching' )}}">COACHING</a>
+                <a class="navbar-tab-mobile" href="{{url_for( 'main.contact' )}}">CONTACT</a>
+            </div>
+
+            <div class="navbar-sep"> </div>
+            <div>
+                <a class="navbar-tab" href="{{url_for( 'main.home' )}}">ACCUEIL</a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div class="navbar-dropdown">
+                <a class="navbar-tab navbar-main-dropdown" href="#">
+                    CRÉATIONS
+                    <div class="dropdown-content">
+                        <a href="{{url_for( 'main.creations_adultes' )}}">CRÉATIONS ADULTES</a>
+                        <hr>
+                        <a href="{{url_for( 'main.creations_enfants' )}}">CRÉATIONS ENFANTS</a>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div class="navbar-dropdown">
+                <a class="navbar-tab navbar-main-dropdown" href="#">
+                    À PROPOS
+                    <div class="dropdown-content">
+                        <a href="{{url_for( 'main.association' )}}">L'ASSOCIATION</a>
+                        <hr>
+                        <a href="{{url_for( 'main.galerie' )}}">GALERIE</a>
+                        <hr>
+                        <a href="{{url_for( 'main.presse' )}}">REVUE DE PRESSE</a>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div class="navbar-dropdown">
+                <a class="navbar-tab navbar-main-dropdown" href="#">
+                    LES ATELIERS
+                    <div class="dropdown-content">
+                        <a href="{{url_for( 'main.ateliers' )}}">LES ATELIERS</a>
+                        <hr>
+                        <a href="{{url_for( 'main.rentree' )}}">INFOS RENTRÉE</a>
+                        <hr>
+                        <a href="{{url_for( 'main.tarifs' )}}">TARIFS</a>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div>
+                <a class="navbar-tab" href="{{url_for( 'main.coaching' )}}">COACHING</a>
+            </div>
+            <div class="navbar-sep">|</div>
+            <div>
+                <a class="navbar-tab" href="{{url_for( 'main.contact' )}}">CONTACT</a>
+            </div>
+            <div class="navbar-sep"> </div>
+        </div>
+
+        <div class="sub-container container-affiche">
+            <div class="top-art">
+                <div class="banniere">
+                    {% block banniere %}
+                    {% endblock %}
+                </div>
+                <div class="logo">
+                    <img class="img-logo" src="{{url_for('static', filename='resources/img/red.png')}}" alt="">
+                </div>
+            </div>
+            {% block core %}
+            {% endblock %}
+        </div>
+        <div class="mfooter">
+            <p class="alignleft">Théâtre du Labyrinthe</p>
+            <p class="aligncenter">gwen.anglade@gmail.com</p>
+            <div class="del-big">
+                <br>
+            </div>
+            <p class="alignright">© 2021</p>
+        </div>
+    </div>
+
+
+    <script src="../static/js/index.js"> </script>
+
+    {% block sources %}
+    {% endblock %}
+
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+
+</html>
