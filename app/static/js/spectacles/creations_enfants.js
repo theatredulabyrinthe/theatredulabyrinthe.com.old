@@ -1,5 +1,11 @@
 const SPECTACLES = [
     {
+        'name': '3 spectacles en 1 !',
+        'date': '2022',
+        'src': 'enfants-2022.png',
+        'auth': 'Gwenaëlle Anglade'
+    },
+    {
         'name': 'Conte à l\'endroit, un compte à l\'envers',
         'date': '2018',
         'src': 'Conte_a_l_endroit.jpg',
