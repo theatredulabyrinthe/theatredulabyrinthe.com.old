@@ -1,5 +1,12 @@
 const SPECTACLES = [
     {
+        'name': 'Liberté, Égalité, Olympe de Gouges',
+        'date': '2022',
+        'src': 'olympe.png',
+        'auth': 'Gwenaëlle Anglade',
+        'link': ''
+    },
+    {
         'name': 'Rouge Cerise - reprise',
         'date': '2022',
         'src': 'rouge-cerise-2022.png',
