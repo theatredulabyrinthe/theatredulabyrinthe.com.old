@@ -8,13 +8,12 @@ const ROUGE_CERISE_2022 =
      [9, 10, 11, 12, 13, 14, 15, 8],
      [18, 19, 20, 21, 22, 23, 24, 17],
      [26, 27, 28, 29, 30, 25, 16, 31], [32]];
+
 const PEPIN = [[1, 2, 5], [3, 4], [6, 7, 8], [9, 10]];
 
 function loadGalerie(name, arr, cont) {
 
-    while (cont.firstChild) {
-        cont.removeChild(cont.firstChild);
-    }
+    while (cont.firstChild) { cont.removeChild(cont.firstChild); }
 
     for (const elt of arr) {
         let col = document.createElement('div');
@@ -53,8 +52,6 @@ function loadGalerie(name, arr, cont) {
         }
         cont.appendChild(col);
     }
-
-
 }
 
 cont = 0

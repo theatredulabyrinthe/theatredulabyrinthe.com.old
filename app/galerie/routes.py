@@ -28,7 +28,7 @@ def rouge_cerise():
 
 @galerie.route("/galerie/rouge-cerise-2022/")
 @galerie.route("/galerie/rouge-cerise-2022")
-def rouge_cerise():
+def rouge_cerise_2022():
     return render_template("galerie/adultes/rouge-cerise-2022.html", title="LABY | SPECTACLES")
 
 
