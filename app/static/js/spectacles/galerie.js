@@ -1,5 +1,12 @@
 const SPECTACLES = [
     {
+        'name': 'Rouge Cerise (2022)',
+        'date': '2022',
+        'src': 'Rouge Cerise 2022.JPG',
+        'auth': 'Gwenaëlle Anglade',
+        'link': 'rouge-cerise-2022'
+    },
+    {
         'name': 'Bleue Nuit',
         'date': '2018',
         'src': 'Bleue Nuit.png',
