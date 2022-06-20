@@ -26,6 +26,11 @@ def oui_je_le_veux():
 def rouge_cerise():
     return render_template("galerie/adultes/rouge.html", title="LABY | SPECTACLES")
 
+@galerie.route("/galerie/rouge-cerise-2022/")
+@galerie.route("/galerie/rouge-cerise-2022")
+def rouge_cerise():
+    return render_template("galerie/adultes/rouge-cerise-2022.html", title="LABY | SPECTACLES")
+
 
 @galerie.route("/galerie/un-pepin-dans-la-paille/")
 @galerie.route("/galerie/un-pepin-dans-la-paille")

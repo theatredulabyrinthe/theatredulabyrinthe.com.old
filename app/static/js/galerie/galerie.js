@@ -2,8 +2,13 @@ const GREEN_PARADISE = [[1, 2, 3, 4], [5, 6, 13], [8, 9, 10, 11], [12, 7, 14]];
 const OUI_JE_LE_VEUX = [[1, 2, 3, 4, 5, 6, 7], [9, 10, 11, 12, 13, 14, 15], [18, 19, 20, 21, 22, 23, 24], [26, 27, 28, 29, 30, 25, 16, 17, 8]];
 const BLEUE_NUIT = [[1, 2, 3, 4, 5, 6, 7, 8, 17], [9, 10, 11, 12, 13, 14, 15, 16], [18, 19, 20, 21, 22, 23, 24, 25, 33], [26, 27, 28, 29, 30, 31, 32, 34]];
 const ROUGE_CERISE = [[1, 2, 3, 4, 5, 6, 7], [9, 10, 11, 12, 13, 14, 15, 8], [18, 19, 20, 21, 22, 23, 24, 17], [26, 27, 28, 29, 30, 25, 16, 31]];
-const PEPIN = [[1, 2, 5], [3, 4], [6, 7, 8], [9, 10]];
 
+const ROUGE_CERISE_2022 =
+    [[1, 2, 3, 4, 5, 6, 7],
+     [9, 10, 11, 12, 13, 14, 15, 8],
+     [18, 19, 20, 21, 22, 23, 24, 17],
+     [26, 27, 28, 29, 30, 25, 16, 31], [32]];
+const PEPIN = [[1, 2, 5], [3, 4], [6, 7, 8], [9, 10]];
 
 function loadGalerie(name, arr, cont) {
 
@@ -72,6 +77,10 @@ if (document.getElementById("green_container")) {
     cont = document.getElementById("rouge_container")
     name_ = "Rouge_cerise";
     arr = ROUGE_CERISE;
+} else if (document.getElementById("rouge_2022_container")) {
+    cont = document.getElementById("rouge_2022_container")
+    name_ = "Rouge_cerise_2022";
+    arr = ROUGE_CERISE_2022;
 } else if (document.getElementById("pepin_container")) {
     cont = document.getElementById("pepin_container")
     name_ = "Un_Pepin_dans_la_paille";

@@ -1,2 +1,5 @@
 venv/
 __pycache__/
+
+clip-olympe.mp4
+app/static/resources/galerie/.DS_Store
