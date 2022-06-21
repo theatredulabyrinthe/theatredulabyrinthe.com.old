@@ -2,12 +2,28 @@ const N = 5;
 
 function loadHome() {
     if (!document.getElementById("home-carousel")) return;
+
     let cont = document.getElementById("home-carousel");
 
     while (cont.firstChild) {
         cont.removeChild(cont.firstChild);
     }
 
+    let ol = document.createElement('ol');
+    ol.classList.add("carousel-indicators");
+
+    for (let i = 1; i < N + 1; i++) {
+        let li = document.createElement('li');
+        li.setAttribute('data-target', '#carouselExampleIndicators');
+        li.setAttribute('data-slide-to', `${i}`);
+
+        if (i == 1) {
+            li.classList.add('active');
+        }
+        ol.appendChild(li);
+    }
+
+    cont.appendChild(ol);
     let div = document.createElement('div');
     div.classList.add('carousel-inner');
 
@@ -40,26 +56,11 @@ function loadHome() {
     }
     cont.appendChild(div)
 
-    let ol = document.createElement('ol');
-    ol.classList.add("carousel-indicators");
-
-    for (let i = 1; i < N + 1; i++) {
-        let li = document.createElement('li');
-        li.setAttribute('data-target', '#carouselExampleIndicators');
-        li.setAttribute('data-slide-to', `${i}`);
-
-        if (i == 1) {
-            li.classList.add('active');
-        }
-        ol.appendChild(li);
-    }
-    cont.appendChild(ol);
-
-    let a1 = document.createElement('a');
-    a1.classList.add('carousel-control-prev');
-    a1.href = '#carouselExampleIndicators';
-    a1.setAttribute('role', 'button');
-    a1.setAttribute('data-slide', 'prev');
+    let gtleft = document.createElement('a');
+    gtleft.classList.add('carousel-control-prev');
+    gtleft.href = '#carouselExampleIndicators';
+    gtleft.setAttribute('role', 'button');
+    gtleft.setAttribute('data-slide', 'prev');
 
     let span11 = document.createElement('span');
     span11.classList.add('carousel-control-prev-icon');
@@ -69,16 +70,16 @@ function loadHome() {
     span12.classList.add('sr-only');
     span12.textContent = "Previous";
 
-    a1.appendChild(span11);
-    a1.appendChild(span12);
+    gtleft.appendChild(span11);
+    gtleft.appendChild(span12);
 
-    //cont.appendChild(a1);
+    // cont.appendChild(gtleft);
 
-    let a2 = document.createElement('a');
-    a2.classList.add('carousel-control-next');
-    a2.href = '#carouselExampleIndicators';
-    a2.setAttribute('role', 'button');
-    a2.setAttribute('data-slide', 'next');
+    let gtright = document.createElement('a');
+    gtright.classList.add('carousel-control-next');
+    gtright.href = '#carouselExampleIndicators';
+    gtright.setAttribute('role', 'button');
+    gtright.setAttribute('data-slide', 'next');
 
     let span21 = document.createElement('span');
     span21.classList.add('carousel-control-next-icon');
@@ -88,14 +89,17 @@ function loadHome() {
     span22.classList.add('sr-only');
     span22.textContent = "Next";
 
-    a2.appendChild(span21);
-    a2.appendChild(span22);
+    gtright.appendChild(span21);
+    gtright.appendChild(span22);
 
-    //cont.appendChild(a2);
+    // cont.appendChild(gtright);
 }
 
 
 window.onload = () => {
     loadHome();
-    document.getElementById('bts-modal-btn').click();
+    let modal = document.getElementById("bts-modal-btn");
+    if (modal) {
+        modal.click();
+    }
 }
