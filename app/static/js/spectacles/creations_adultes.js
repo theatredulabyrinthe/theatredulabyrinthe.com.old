@@ -11,7 +11,7 @@ const SPECTACLES = [
         'date': '2022',
         'src': 'rouge-cerise-2022.png',
         'auth': 'Gwenaëlle Anglade',
-        'link': 'rouge-cerise'
+        'link': 'rouge-cerise-2022'
     },
     {
         'name': 'Bleue Nuit',

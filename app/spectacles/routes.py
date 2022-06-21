@@ -33,6 +33,11 @@ def rouge_cerise():
     return render_template("spectacles/adultes/rouge.html", title="LABY | SPECTACLES")
 
 
+@spectacles.route("/creations_adultes/rouge-cerise-2022/")
+@spectacles.route("/creations_adultes/rouge-cerise-2022")
+def rouge_cerise_2022():
+    return render_template("spectacles/adultes/rouge-2022.html", title="LABY | SPECTACLES")
+
 @spectacles.route("/creations_adultes/bleue-nuit/")
 @spectacles.route("/creations_adultes/bleue-nuit")
 def bleue_nuit():
