@@ -41,7 +41,7 @@ function loadHome() {
 
         let label_cont = document.createElement('div');
         label_cont.classList.add("carousel-caption", "d-none", "d-md-block");
-        label_cont.style.color = 'rgb(48,194,87)';
+        label_cont.style.color = 'rgb(196,49,0)';
         label_cont.style.backgroundColor = 'rgba(0, 0, 0, 100)';
         let label_p = document.createElement('p');
         label_p.textContent = 'Dernière Création';
