@@ -13,13 +13,13 @@ const SPECTACLES = [
         'auth': 'Gwenaëlle Anglade',
         'link': 'bleue-nuit'
     },
-    {
+    /* {
         'name': 'Echec & Mat',
         'date': '2015',
         'src': 'Echec et Mat.png',
         'auth': 'Gwenaëlle Anglade',
         'link': 'echec-et-mat'
-    },
+    }, */
     {
         'name': 'Green Paradise',
         'date': '2016',
