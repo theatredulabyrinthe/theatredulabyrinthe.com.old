@@ -51,7 +51,7 @@ const SPECTACLES = [
     {
         'name': 'Un Pépin dans la Paille',
         'date': '2014',
-        'src': 'Un Pepin dans la paille.png',
+        'src': 'Un Pepin dans la Paille.png',
         'auth': 'Gwenaëlle Anglade',
         'link': 'un-pepin-dans-la-paille'
     },
