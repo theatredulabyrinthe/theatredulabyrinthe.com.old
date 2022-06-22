@@ -8,6 +8,10 @@ galerie = Blueprint("galerie", __name__)
 def green_paradise():
     return render_template("galerie/adultes/green.html", title="LABY | SPECTACLES")
 
+@galerie.route("/galerie/echec-et-mat/")
+@galerie.route("/galerie/echec-et-mat")
+def echec_et_mat():
+    return render_template("galerie/adultes/echec.html", title="LABY | SPECTACLES")
 
 @galerie.route("/galerie/bleue-nuit/")
 @galerie.route("/galerie/bleue-nuit")
