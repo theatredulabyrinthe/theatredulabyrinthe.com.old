@@ -6,7 +6,7 @@ const ATELIERS = [
         'depart': '10h30',
         'fin': '12h',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '250',
+        'tarif': '260',
         'rentree': {
             'num': '8',
             'mois': 'Septembre',
@@ -21,7 +21,7 @@ const ATELIERS = [
         'depart': '14h',
         'fin': '15h30',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '250',
+        'tarif': '260',
         'rentree': {
             'num': '8',
             'mois': 'Septembre',
@@ -29,7 +29,7 @@ const ATELIERS = [
         },
         'img-src': '/static/resources/front/ado1.jpg'
     },
-    {
+    /* {
         'niveau': 'Ados 2',
         'scolaire': 'Collège',
         'jour': 'Mercredi',
@@ -43,7 +43,7 @@ const ATELIERS = [
             'annee': '2021'
         },
         'img-src': '/static/resources/front/ado2.jpg'
-    },
+    }, */
     {
         'niveau': 'Ados Confirmés',
         'scolaire': 'Lycée',
@@ -51,7 +51,7 @@ const ATELIERS = [
         'depart': '18h30',
         'fin': '20h',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
-        'tarif': '260',
+        'tarif': '270',
         'rentree': {
             'num': '13',
             'mois': 'Septembre',
@@ -66,7 +66,7 @@ const ATELIERS = [
         'depart': '20h30',
         'fin': '22h30',
         'lieu': 'Maison pour tous du Pont Neuf, 9 place des Fondeurs',
-        'tarif': '320',
+        'tarif': '330',
         'rentree': {
             'num': '13',
             'mois': 'Septembre',
@@ -81,7 +81,7 @@ const ATELIERS = [
         'depart': '20h30',
         'fin': '22h30',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
-        'tarif': '350',
+        'tarif': '360',
         'rentree': {
             'num': '14',
             'mois': 'Septembre',
@@ -96,7 +96,7 @@ const ATELIERS = [
         'depart': '20h30',
         'fin': '22h30',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '350',
+        'tarif': '360',
         'rentree': {
             'num': '8',
             'mois': 'Septembre',
@@ -277,7 +277,7 @@ function loadTarifs() {
         h5.textContent = `atelier ${elt['niveau']}`.toUpperCase();
         title.textContent = `Atelier ${elt['niveau']}`;
         const tarif = `<span style="font-weight: bold;">${elt['tarif']} €/an</span>`
-        const adhesion = `<span style="font-weight: bold;">+20 €</span> d'adhésion à l'association`
+        const adhesion = `<span style="font-weight: bold;">+25 €</span> d'adhésion à l'association`
         const x3 = `<span style="font-style: italic;">payable en 3 fois sur 3 mois</span>`;
         txt.innerHTML = `${tarif}<br>${adhesion}<br>${x3}`;
 
