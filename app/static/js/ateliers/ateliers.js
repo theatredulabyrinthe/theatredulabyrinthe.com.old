@@ -8,14 +8,14 @@ const ATELIERS = [
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '260',
         'rentree': {
-            'num': '8',
+            'num': '7',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/enfants.jpg'
     },
     {
-        'niveau': 'Ados 1',
+        'niveau': 'Ados',
         'scolaire': 'Collège',
         'jour': 'Mercredi',
         'depart': '14h',
@@ -23,9 +23,9 @@ const ATELIERS = [
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '260',
         'rentree': {
-            'num': '8',
+            'num': '7',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/ado1.jpg'
     },
@@ -53,9 +53,9 @@ const ATELIERS = [
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '270',
         'rentree': {
-            'num': '13',
+            'num': '6',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/conf.jpg'
     },
@@ -68,9 +68,9 @@ const ATELIERS = [
         'lieu': 'Maison pour tous du Pont Neuf, 9 place des Fondeurs',
         'tarif': '330',
         'rentree': {
-            'num': '13',
+            'num': '5',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/adultes.jpg'
     },
@@ -83,9 +83,9 @@ const ATELIERS = [
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '360',
         'rentree': {
-            'num': '14',
+            'num': '6',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/adultes2.jpg'
     },
@@ -98,9 +98,9 @@ const ATELIERS = [
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '360',
         'rentree': {
-            'num': '8',
+            'num': '7',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/master.jpg'
     }
@@ -277,7 +277,7 @@ function loadTarifs() {
         h5.textContent = `atelier ${elt['niveau']}`.toUpperCase();
         title.textContent = `Atelier ${elt['niveau']}`;
         const tarif = `<span style="font-weight: bold;">${elt['tarif']} €/an</span>`
-        const adhesion = `<span style="font-weight: bold;">+25 €</span> d'adhésion à l'association`
+        const adhesion = `<span style="font-weight: bold;">+20 €</span> d'adhésion à l'association`
         const x3 = `<span style="font-style: italic;">payable en 3 fois sur 3 mois</span>`;
         txt.innerHTML = `${tarif}<br>${adhesion}<br>${x3}`;
 
