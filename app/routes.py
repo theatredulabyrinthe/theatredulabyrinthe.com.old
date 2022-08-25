@@ -6,11 +6,13 @@ main = Blueprint("main", __name__)
 @main.route("/home/")
 @main.route("/home")
 def home():
-    page = "base"
+    page = "salon"
     if page == "info":
         return render_template("home-info.html", title="LABY | HOME")
     elif page == "rentree":
         return render_template("home-rentree.html", title="LABY | HOME")
+    elif page == "salon":
+        return render_template("home-salon.html", title="LABY | HOME")
     else:
         return render_template("home.html", title="LABY | HOME")
 
