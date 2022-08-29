@@ -4,6 +4,7 @@
 @import url(fa.css);
 @import url(btn.css);
 @import url(footer.css);
+
 body {
     background-color: black;
     color: #C43100;
@@ -13,6 +14,10 @@ body {
 .name {
     font-weight: bold;
     color: rgb(126, 37, 7);
+}
+
+.the-red {
+    color: #C43100;
 }
 
 .facebook {
