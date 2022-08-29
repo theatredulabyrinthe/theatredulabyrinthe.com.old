@@ -90,13 +90,13 @@ const ATELIERS = [
         'img-src': '/static/resources/front/adultes2.jpg'
     },
     {
-        'niveau': 'Adultes 3',
+        'niveau': 'Adultes Spectacle',
         'scolaire': '',
         'jour': 'Mercredi',
         'depart': '20h30',
         'fin': '22h30',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '330',
+        'tarif': '350',
         'rentree': {
             'num': '7',
             'mois': 'Septembre',
