@@ -81,7 +81,7 @@ const ATELIERS = [
         'depart': '20h30',
         'fin': '22h30',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
-        'tarif': '360',
+        'tarif': '330',
         'rentree': {
             'num': '6',
             'mois': 'Septembre',
@@ -96,7 +96,7 @@ const ATELIERS = [
         'depart': '20h30',
         'fin': '22h30',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '360',
+        'tarif': '330',
         'rentree': {
             'num': '7',
             'mois': 'Septembre',
