@@ -7,11 +7,7 @@ const ATELIERS = [
         'fin': '12h',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '260',
-        'rentree': {
-            'num': '7',
-            'mois': 'Septembre',
-            'annee': '2022'
-        },
+        'date-rentree': '7 Septembre 2022',
         'img-src': '/static/resources/front/enfants.jpg'
     },
     {
@@ -22,11 +18,7 @@ const ATELIERS = [
         'fin': '15h30',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '260',
-        'rentree': {
-            'num': '7',
-            'mois': 'Septembre',
-            'annee': '2022'
-        },
+        'date-rentree': '7 Septembre 2022',
         'img-src': '/static/resources/front/ado1.jpg'
     },
     /* {
@@ -52,11 +44,7 @@ const ATELIERS = [
         'fin': '20h',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '270',
-        'rentree': {
-            'num': '6',
-            'mois': 'Septembre',
-            'annee': '2022'
-        },
+        'date-rentree': '6 Septembre 2022',
         'img-src': '/static/resources/front/conf.jpg'
     },
     {
@@ -67,11 +55,7 @@ const ATELIERS = [
         'fin': '22h30',
         'lieu': 'Maison pour tous du Pont Neuf, 9 place des Fondeurs',
         'tarif': '330',
-        'rentree': {
-            'num': '5',
-            'mois': 'Septembre',
-            'annee': '2022'
-        },
+        'date-rentree': '5 Septembre 2022',
         'img-src': '/static/resources/front/adultes.jpg'
     },
     {
@@ -82,11 +66,7 @@ const ATELIERS = [
         'fin': '22h30',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '330',
-        'rentree': {
-            'num': '5',
-            'mois': 'Septembre',
-            'annee': '2022 (avec le cours du lundi)'
-        },
+        'date-rentree': '5 Septembre 2022 (exceptionnellement lundi !)',
         'img-src': '/static/resources/front/adultes2.jpg'
     },
     {
@@ -97,11 +77,7 @@ const ATELIERS = [
         'fin': '22h30',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '350',
-        'rentree': {
-            'num': '- plus tard -',
-            'mois': '',
-            'annee': ''
-        },
+        'date-rentree': '(à voir plus tard dans le mois)',
         'img-src': '/static/resources/front/master.jpg'
     }
     /* {
@@ -216,7 +192,7 @@ function loadRentree() {
 
         h5.textContent = `atelier ${elt['niveau']}`.toUpperCase();
         title.textContent = `Atelier ${elt['niveau']}`;
-        const date = `<span style="font-weight: bold;">${elt['jour']} ${elt['rentree']['num']} ${elt['rentree']['mois']}</span>`;
+        const date = `<span style="font-weight: bold;">${elt['date-rentree']}</span>`;
         const intro = `<span style="font-style: italic;">Cours d'essai + inscription : </span>`;
         const horaire = `de ${elt['depart']} à ${elt['fin']}`;
         txt.innerHTML = `<br> ${intro} ${date} <br> (${horaire})`;
