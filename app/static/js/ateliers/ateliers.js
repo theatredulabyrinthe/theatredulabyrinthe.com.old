@@ -83,9 +83,9 @@ const ATELIERS = [
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '330',
         'rentree': {
-            'num': '6',
+            'num': '5',
             'mois': 'Septembre',
-            'annee': '2022'
+            'annee': '2022 (avec le cours du lundi)'
         },
         'img-src': '/static/resources/front/adultes2.jpg'
     },
@@ -98,9 +98,9 @@ const ATELIERS = [
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '350',
         'rentree': {
-            'num': '7',
-            'mois': 'Septembre',
-            'annee': '2022'
+            'num': '- plus tard -',
+            'mois': '',
+            'annee': ''
         },
         'img-src': '/static/resources/front/master.jpg'
     }

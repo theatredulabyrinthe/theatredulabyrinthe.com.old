@@ -6,7 +6,7 @@ main = Blueprint("main", __name__)
 @main.route("/home/")
 @main.route("/home")
 def home():
-    page = "salon"
+    page = "rentree"
     if page == "info":
         return render_template("home-info.html", title="LABY | HOME")
     elif page == "rentree":
