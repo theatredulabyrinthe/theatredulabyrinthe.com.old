@@ -32,7 +32,7 @@ const ATELIERS = [
         'rentree': {
             'num': '7',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/ado2.jpg'
     }, */
@@ -91,7 +91,7 @@ const ATELIERS = [
         'rentree': {
             'num': '14',
             'mois': 'Septembre',
-            'annee': '2021'
+            'annee': '2022'
         },
         'img-src': '/static/resources/front/master.jpg'
     } */
