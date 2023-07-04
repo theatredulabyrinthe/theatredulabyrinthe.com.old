@@ -21,80 +21,39 @@ const ATELIERS = [
         'date-rentree': '7 Septembre 2022',
         'img-src': '/static/resources/front/ado1.jpg'
     },
-    /* {
-        'niveau': 'Ados 2',
-        'scolaire': 'Collège',
-        'jour': 'Mercredi',
-        'depart': '18h30',
-        'fin': '20h',
-        'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '250',
-        'rentree': {
-            'num': '7',
-            'mois': 'Septembre',
-            'annee': '2022'
-        },
-        'img-src': '/static/resources/front/ado2.jpg'
-    }, */
     {
         'niveau': 'Ados Confirmés',
         'scolaire': 'Lycée',
         'jour': 'Mardi',
         'depart': '18h30',
-        'fin': '20h',
+        'fin': '19h50',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '270',
-        'date-rentree': '6 Septembre 2022',
+        'date-rentree': '5 Septembre 2022',
         'img-src': '/static/resources/front/conf.jpg'
     },
     {
-        'niveau': 'Adultes 1',
-        'scolaire': '',
-        'jour': 'Lundi',
-        'depart': '20h30',
-        'fin': '22h30',
-        'lieu': 'Maison pour tous du Pont Neuf, 9 place des Fondeurs',
-        'tarif': '330',
-        'date-rentree': '5 Septembre 2022',
-        'img-src': '/static/resources/front/adultes.jpg'
-    },
-    {
-        'niveau': 'Adultes 2',
+        'niveau': 'Adultes',
         'scolaire': '',
         'jour': 'Mardi',
-        'depart': '20h30',
-        'fin': '22h30',
+        'depart': '20h00',
+        'fin': '22h00',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '330',
-        'date-rentree': '5 Septembre 2022 (exceptionnellement lundi !)',
+        'date-rentree': '4 Septembre 2022 (exceptionnellement lundi !)',
         'img-src': '/static/resources/front/adultes2.jpg'
     },
     {
-        'niveau': 'Adultes Spectacle',
+        'niveau': 'Adultes',
         'scolaire': '',
         'jour': 'Mercredi',
-        'depart': '20h30',
-        'fin': '22h30',
+        'depart': '20h00',
+        'fin': '22h00',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '350',
+        'tarif': '330',
         'date-rentree': '(à voir plus tard dans le mois)',
         'img-src': '/static/resources/front/master.jpg'
     }
-    /* {
-        'niveau': 'Master Class',
-        'scolaire': '',
-        'jour': 'Lundi',
-        'depart': '20h30',
-        'fin': '22h30',
-        'lieu': 'Maison pour tous du Pont Neuf, 9 place des Fondeurs',
-        'tarif': '350',
-        'rentree': {
-            'num': '14',
-            'mois': 'Septembre',
-            'annee': '2022'
-        },
-        'img-src': '/static/resources/front/master.jpg'
-    } */
 ];
 
 function loadAteliers() {
@@ -151,8 +110,6 @@ function loadAteliers() {
         card.appendChild(inner);
         cont.appendChild(card);
     }
-
-
 }
 loadAteliers();
 
@@ -211,8 +168,6 @@ function loadRentree() {
         card.appendChild(inner);
         cont.appendChild(card);
     }
-
-
 }
 loadRentree();
 
@@ -271,7 +226,5 @@ function loadTarifs() {
         card.appendChild(inner);
         cont.appendChild(card);
     }
-
-
 }
 loadTarifs();
