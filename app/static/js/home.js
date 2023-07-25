@@ -46,7 +46,7 @@ function loadHome() {
         let label_p = document.createElement('p');
         label_p.textContent = 'Dernière Création';
         let label_H3 = document.createElement('h3');
-        label_H3.textContent = 'ROUGE CERISE';
+        label_H3.textContent = 'Liberté, Égalité, Olympe de Gouges';
 
         label_cont.appendChild(label_p);
         label_cont.appendChild(label_H3);

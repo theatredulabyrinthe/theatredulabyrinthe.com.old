@@ -1,6 +1,12 @@
 const SPECTACLES = [
     {
         'name': '3 spectacles en 1 !',
+        'date': '2023',
+        'src': 'enfants-2023.png',
+        'auth': 'Gwenaëlle Anglade'
+    },
+    {
+        'name': '3 spectacles en 1 !',
         'date': '2022',
         'src': 'enfants-2022.png',
         'auth': 'Gwenaëlle Anglade'

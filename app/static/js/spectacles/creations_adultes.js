@@ -1,6 +1,20 @@
 const SPECTACLES = [
     {
         'name': 'Liberté, Égalité, Olympe de Gouges',
+        'date': '2023',
+        'src': 'olympe3.png',
+        'auth': 'Gwenaëlle Anglade',
+        'link': ''
+    },
+    {
+        'name': 'Liberté, Égalité, Olympe de Gouges',
+        'date': '2023',
+        'src': 'olympe2.png',
+        'auth': 'Gwenaëlle Anglade',
+        'link': ''
+    },
+    {
+        'name': 'Liberté, Égalité, Olympe de Gouges',
         'date': '2022',
         'src': 'olympe.png',
         'auth': 'Gwenaëlle Anglade',
