@@ -7,7 +7,7 @@ const ATELIERS = [
         'fin': '12h',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '260',
-        'date-rentree': '7 Septembre 2022',
+        'date-rentree': '6 Septembre 2023',
         'img-src': '/static/resources/front/enfants.jpg'
     },
     {
@@ -18,41 +18,41 @@ const ATELIERS = [
         'fin': '15h30',
         'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
         'tarif': '260',
-        'date-rentree': '7 Septembre 2022',
+        'date-rentree': '6 Septembre 2023',
         'img-src': '/static/resources/front/ado1.jpg'
     },
     {
+        'niveau': 'Adultes',
+        'scolaire': '',
+        'jour': 'Mercredi',
+        'depart': '20h30',
+        'fin': '22h30',
+        'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
+        'tarif': '330',
+        'date-rentree': '6 Septembre 2023',
+        'img-src': '/static/resources/front/master.jpg'
+    },
+    {
         'niveau': 'Ados Confirmés',
-        'scolaire': 'Lycée',
+        'scolaire': 'Collège - Lycée',
         'jour': 'Mardi',
         'depart': '18h30',
-        'fin': '19h50',
+        'fin': '20h',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '270',
-        'date-rentree': '5 Septembre 2022',
+        'date-rentree': '6 Septembre 2023',
         'img-src': '/static/resources/front/conf.jpg'
     },
     {
         'niveau': 'Adultes',
         'scolaire': '',
         'jour': 'Mardi',
-        'depart': '20h00',
-        'fin': '22h00',
+        'depart': '20h30',
+        'fin': '22h30',
         'lieu': 'Maison pour tous de la Cité, 52 impasse Huysmans Rechèvres',
         'tarif': '330',
-        'date-rentree': '4 Septembre 2022 (exceptionnellement lundi !)',
+        'date-rentree': '5 Septembre 2023',
         'img-src': '/static/resources/front/adultes2.jpg'
-    },
-    {
-        'niveau': 'Adultes',
-        'scolaire': '',
-        'jour': 'Mercredi',
-        'depart': '20h00',
-        'fin': '22h00',
-        'lieu': 'Chapelle Saint Julien, 1 rue Saint Julien',
-        'tarif': '330',
-        'date-rentree': '(à voir plus tard dans le mois)',
-        'img-src': '/static/resources/front/master.jpg'
     }
 ];
 
